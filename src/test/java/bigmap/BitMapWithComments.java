@@ -56,9 +56,9 @@ public class BitMapWithComments {
         int charIndex = k / 16;
 
         // 取余
+        // 假设位数组长度为32
         // 该k, 在16位中的位置, 从0开始
-        // 比如k=15, 则在16位中的第15位, 如果k=16, 则在16位的第0位
-        // 如果k=17, 则在16位的第1位
+        // 如果k=17, 则在16位的第1位, 如果k=18, 则在16位的第2位
         int bitIndex = k % 16;
 
         // 假设k=17, charIndex=1, bitIndex=1, 则1的二进制0001左移1位, i为0010, 十进制为2
@@ -114,13 +114,11 @@ public class BitMapWithComments {
      * @param args 入参
      */
     public static void main(String[] args) {
-        BitMapWithComments bitMap = new BitMapWithComments(32);
-        bitMap.set(17);
-        bitMap.set(18);
+        BitMapWithComments bitMap = new BitMapWithComments(16);
+        bitMap.set(16);
 
         if (bitMap.get(17)) {
             System.out.println("true");
         }
-
     }
 }
