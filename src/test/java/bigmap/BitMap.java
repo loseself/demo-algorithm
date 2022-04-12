@@ -30,9 +30,7 @@ public class BitMap {
     this.bitArrayLength = bitArrayLength;
 
     // 用char实现, 一个char, 16位, 所以以16位为一个单位
-    // 声明一个16位的位数组, 那么只需要一个长度的char数组
     // + 1 的意思是, 至少一个长度的char数组, 也就是至少16位
-    // 该代码实现, 当位数组长度位16时, 那么就是两个char
     this.bitArray = new char[bitArrayLength / 16 + 1];
   }
 
@@ -116,7 +114,7 @@ public class BitMap {
    * @param args 入参
    */
   public static void main(String[] args) {
-    BitMap bitMap = new BitMap(17);
+    BitMap bitMap = new BitMap(32);
     bitMap.set(17);
     bitMap.set(18);
 
