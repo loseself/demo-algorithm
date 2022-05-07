@@ -15,13 +15,13 @@ public class BubbleSort {
             findMax(arr, i);
         }
 
-        SelectionSort.print(arr);
+        RankUtil.print(arr);
     }
 
     private void findMax(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             if (arr[i] > arr[i + 1]) {
-                SelectionSort.swap(arr, i, i + 1);
+                RankUtil.swap(arr, i, i + 1);
             }
         }
     }

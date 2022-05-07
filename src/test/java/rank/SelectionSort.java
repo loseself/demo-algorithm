@@ -20,22 +20,10 @@ public class SelectionSort {
                 }
             }
 
-            swap(arr, i, minPos);
+            RankUtil.swap(arr, i, minPos);
         }
 
-        print(arr);
-    }
-
-    public static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-
-    public static void print(int[] arr) {
-        for (int k : arr) {
-            System.out.print(k + " ");
-        }
+        RankUtil.print(arr);
     }
 
 }
