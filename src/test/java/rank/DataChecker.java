@@ -38,7 +38,8 @@ public class DataChecker {
 
         Arrays.sort(arr);
 //        InsertionSort.sort(arr2);
-        ShellSort.knuth(arr2);
+//        ShellSort.knuth(arr2);
+        MergeSort.sort(arr2);
 
         boolean same = true;
         for (int i = 0; i < arr2.length; i++) {
