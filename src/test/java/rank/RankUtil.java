@@ -9,6 +9,7 @@ public class RankUtil {
         for (int k : arr) {
             System.out.print(k + " ");
         }
+        System.out.println();
     }
 
     public static void swap(int[] arr, int i, int j) {
